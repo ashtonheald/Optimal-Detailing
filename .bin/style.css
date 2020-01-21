@@ -1,0 +1,421 @@
+/*
+Theme Name: Optimal Detailing
+Theme URI: https://ashtonheald.online/optimaldetailing-theme
+Author: Ashton Heald
+Author URI: https://ashtonheald.online
+Description: A bootstrap wordpress theme for work and services showcase.
+Version: 1.0
+*/
+
+html {
+	margin-top: 0 !important;
+}
+
+body {
+	margin-top: 0 !important;
+}
+
+html,
+body {
+	margin-top: 0 !important;
+}
+
+
+/* ===== NAV ===== */
+
+nav {
+	background: #eaebec;
+	min-height: 50px;
+	border-top: solid 1px #000;
+	border-bottom: solid 1px #000;
+}
+
+.navbar {
+	padding: 0;
+}
+
+nav {
+	min-height: 0;
+}
+
+.nav-item {
+	display: inline-block;
+	color: #000;
+	text-decoration: none;
+}
+
+.nav-item::after {
+	content: '';
+	display: block;
+	width: 0;
+	height: 2px;
+	background: #000;
+	transition: width .3s;
+}
+
+.nav-item:hover::after {
+	width: 100%;
+	transition: width .3s;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+	padding-right: 1em;
+	padding-left: 1em;
+	text-align: center;
+}
+
+.navbar-toggler {
+	width: 100%;
+}
+
+.header-logo img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100px;
+	padding: 10px 0;
+}
+
+
+/*sticky header position*/
+
+.sticky.is-sticky {
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	z-index: 1000;
+	width: 100%;
+}
+
+.mylogo {
+	display: none;
+}
+
+.sticky.is-sticky .mylogo {
+	display: block !important;
+}
+
+
+/* ===== HERO ===== */
+
+div.hero {
+	margin: 25px 0;
+}
+
+.hero-img-1 {
+	background-image: url("assets/images/space-man.jpg");
+	background-position: center;
+	display: flex;
+	align-content: center;
+	justify-content: center;
+}
+
+.hero-img-2 {
+	background-image: url("assets/images/space-man-5-3.jpg");
+	background-position: center;
+	display: flex;
+	align-content: center;
+	justify-content: center;
+}
+
+.hero-img-3 {
+	background-image: url("assets/images/space-background.jpg");
+	background-position: center;
+	display: flex;
+	align-content: center;
+	justify-content: center;
+}
+
+.hero-img-4 {
+	background-image: url("assets/images/space-man-7.jpg");
+	background-position: center;
+	display: flex;
+	align-content: center;
+	justify-content: center;
+}
+
+#hero h1 {
+	text-align: center;
+	padding-bottom: 10px;
+	font-size: 2em;
+}
+
+#hero h2 {
+	text-align: center;
+	padding-bottom: 10px;
+	font-size: 2.5em;
+}
+
+#hero h3 {
+	text-align: center;
+	padding-bottom: 20px;
+	font-size: 1.2em;
+}
+
+#hero h2.contact-title {
+	padding-top: 45px;
+	color: #000;
+}
+
+#hero h3.contact-subTitle {
+	padding-bottom: 40px;
+}
+
+div p.copyright.copyright-contact-page {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.button {
+	display: flex;
+	justify-content: center;
+	margin: 0 auto;
+	width: 144px;
+	background: #f00;
+	padding: 5px;
+	border-radius: 5px;
+	color: #000;
+}
+
+.button:hover {
+	text-decoration: none;
+	background: linear-gradient(#900, #700, #500, #300, #100);
+	color: #fff;
+}
+
+.button-form {
+	margin: 0 0 75px 0;
+}
+
+
+/* ===== ABOUT ===== */
+
+div.about {
+	display: block;
+	text-align: center;
+	margin-top: 50px;
+	padding: 0 50px;
+}
+
+div.about h1 {
+	margin: 0 auto;
+	font-size: 1.2em;
+}
+
+div.about h2 {
+	margin: 0 auto;
+	font-size: 2.5em;
+	padding-bottom: 30px;
+}
+
+div.about p {
+	margin: 0 auto 50px;
+}
+
+.fa-dove,
+.fa-fish,
+.fa-dog {
+	font-size: 50px;
+}
+
+div.col-sm-4 h1 {
+	padding-top: 5px;
+	padding-bottom: 15px;
+}
+
+
+/* ===== Services ===== */
+
+div.services {
+	display: block;
+	text-align: center;
+	margin-top: 50px;
+	padding: 0 50px;
+}
+
+div.services h1 {
+	margin: 0 auto;
+	font-size: 1.2em;
+}
+
+div.services h2 {
+	margin: 0 auto;
+	font-size: 2.5em;
+	padding-bottom: 30px;
+}
+
+div.services p {
+	margin: 0 auto 50px;
+}
+
+.service-img {
+	width: 250px;
+}
+
+
+/* ===== Contact ===== */
+
+div.contact {
+	display: block;
+	text-align: center;
+	margin-top: 50px;
+	padding: 0 50px;
+}
+
+div.contact h1 {
+	margin: 0 auto;
+	font-size: 1.2em;
+}
+
+div.contact h2 {
+	margin: 0 auto;
+	font-size: 2.5em;
+	padding-bottom: 30px;
+}
+
+div.contact p {
+	margin: 0 auto 50px;
+}
+
+div.contact a.button {
+	margin-bottom: 30px;
+}
+
+div.col-sm-6 h1 {
+	padding-top: 5px;
+	padding-bottom: 15px;
+}
+
+div.contact div.row a {
+	color: #212529;
+	text-decoration: none;
+}
+
+div.contact div.row a:hover {
+	color: #000;
+	text-decoration: underline;
+}
+
+div.contact form {
+	text-align: left;
+}
+
+.form-group {
+	margin-bottom: 0;
+}
+
+.message-box {
+	margin-bottom: 10px;
+}
+
+
+/* ===== Footer ===== */
+
+footer {
+	color: #fff;
+}
+
+#footer {
+	background-image: url("assets/images/space-man-4.jpg");
+	background-position: center;
+	align-content: center;
+	justify-content: center;
+	padding: 0 50px;
+}
+
+footer h1 {
+	padding-top: 25px;
+	text-align: center;
+	padding-bottom: 10px;
+}
+
+footer h2 {
+	text-align: center;
+	padding-bottom: 20px;
+	font-size: 20px;
+	letter-spacing: 2px;
+}
+
+.footer-logo img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100px;
+	padding-bottom: 20px;
+}
+
+.social {
+	text-align: center;
+}
+
+p.address {
+	padding-bottom: 5px;
+}
+
+.fa-facebook-square,
+.fa-instagram,
+.fa-twitter-square {
+	font-size: 40px;
+	padding: 0 10px;
+}
+
+div.social-icons a {
+	text-decoration: none;
+	color: #fff;
+}
+
+div.social-icons a:hover {
+	color: #f00;
+}
+
+div p.copyright {
+	margin: 0;
+	padding-top: 20px;
+	padding-bottom: 25px;
+}
+
+p.copyright a {
+	text-decoration: none;
+	color: #fff;
+}
+
+p.copyright a:hover {
+	color: #f00;
+}
+
+
+/* Portfolio posts */
+
+.post {
+	-webkit-box-shadow: 0px 2px 2px 0px rgba(50, 50, 50, 0.75);
+	-moz-box-shadow: 0px 2px 2px 0px rgba(50, 50, 50, 0.75);
+	box-shadow: 0px 2px 2px 0px rgba(50, 50, 50, 0.75);
+	margin: 0 0 20px;
+	padding: 30px;
+}
+
+.post-title {
+	text-align: center;
+}
+
+.post-image {
+	display: block;
+	text-align: center;
+	;
+}
+
+.post-image img {
+	border-radius: 0;
+	margin-bottom: 40px;
+}
+
+.post-work {
+	display: inline-block;
+	max-width: 100%;
+	margin: 0 auto;
+}
+
+#content .entry-content {
+	align-items: center;
+}
